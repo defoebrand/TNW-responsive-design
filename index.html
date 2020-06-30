@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="burger.ico"/>
   <title>Responsive Projet</title>
 </head>
 <body>
@@ -43,14 +44,24 @@
         <a href="" class="header2-links hide1">Neural</a>
       </div>
 
-      <div class="header2-right hide2">
-        <span>Transform</span>
-        <span>Countdown</span>
+      <div class="header2-right">
+      <button class="border-left">
+       <img class="header-images mag" src="images/mag-icon.png" alt="">
+     </button>
+      <div class="hiding-header hide2">
+        <span class="transform"></span>
+        <span class="couch"><strong>Couch Conference</strong> Starts In <span class="countdown">02:02:02:02</span></span>
         <button type="button" name="button" class="button">Register Now</button>
+      </div>
+
+      <button class="border-left display-small">
+         <img class="header-images" src="images/burger.ico" alt="">
+      </button>
+
       </div>
     </div>
     <div class="tnw-conference">
-     <a href="" class="conference-link">Don't fall behind our tech future - Join TNW Couch Conference</a>
+     <a href="" class="conference-link">Don't fall behind our tech future - Join TNW Couch Conference -></a>
     </div>
   </header>
     <main>
@@ -69,7 +80,7 @@
       </article>
       <div class="content">
         <div class="latest-news">
-        <p>Latest News</p>
+        <p class="title">Latest News ></p>
         <ul>
           <li><img src="images/poetry.png" alt="">
             <h4>Digital poetry — 5 ways to combine human and computer languages</h4>
@@ -92,8 +103,8 @@
             <a href="">Abhimanyu Ghoshal - 1 hour ago</a>
           </li>
           <li><img src="images/photo.png" alt=""  >
-            <h4></h4>
-            <a href=""></a>
+            <h4>There used to be a headline here about photography but it's gone now</h4>
+            <a href="">Brandon - Today</a>
           </li>
           <li><img src="images/jupiter.png" alt=  "">
             <h4>Super-puff worlds: These Jupiter-sized planets are light as cotton candy</h4>
@@ -106,133 +117,185 @@
         </ul>
         </div>
         <div class="funding">
-          <p>Latest Funding Rounds</p>
-        <ul>
-          <li><div><img src="images/spiff.png" alt="">
-          <b>Spiff, Inc.</b></div></li>
-          <li><div><img src="images/sc.png" alt="">
-          <b>Solarcentury</b></div></li>
-          <li><div><img src="images/gs.png" alt="">
-          <b>GroupSolver</b></div></li>
-          <li class="hide4"><div><img src="images/solink.png" alt="">
-          <b>Solink</b></div></li>
+        <div class="funding-actions">
+          <p class="title funding-title">Latest funding rounds on Index.co ></p>
+           <span class="funding-links">
+             <a href="" class="border-right">Add info</a>
+             <a href="" class="border-right">Get updates by email</a>
+             <a href=""> See more</a>
+           </span>
+         </div>
+        <ul class="funding-list">
+          <li><div class="funding-companies">
+            <img src="images/spiff.png" alt="">
+            <h3><b>Spiff, Inc.</b></h3>
+            <h4>$41.5M</h4>
+            <h5>SERIES C</h5>
+            <div class="icon-links">
+              <a href="#">
+                <span><i class="tag"></i>Real Estate, +2</span><br />
+                <span><i class="bag"></i>Canaan Partners, +3</span>
+              </a>
+            <a href="#" class="funding-ad">Scurri Raises €1.5m in Funding on FinSMEs</a>
+          </div>
+          </div></li>
+          <li><div class="funding-companies">
+            <img src="images/sc.png" alt="">
+            <h3><b>Solarcentury</b></h3>
+            <h4>$2.2M</h4>
+            <h5>SEED FUND</h5>
+            <div class="icon-links">
+              <a href="#">
+                <span><i class="tag"></i>E-Commerce, +3</span><br />
+                <span><i class="bag"></i>Nordic Ninja VC</span>
+              </a>
+            <a href="#" class="funding-ad">Mynd Property Management Raises $41.5M in Series C Financing on FinSMEs</a>
+          </div>
+          </div></li>
+          <li><div class="funding-companies">
+            <img src="images/gs.png" alt="">
+            <h3><b>GroupSolver</b></h3>
+            <h4>$14M</h4>
+            <h5>SERIES B</h5>
+            <div class="icon-links">
+              <a href="#">
+                <span><i class="tag"></i>Online Shopping, +2</span><br />
+                <span><i class="bag"></i>Samaipata, +4</span>
+              </a>
+            <a href="#" class="funding-ad">Same-day delivery platform Ziticity raises €2.2 million on Ecommerce News</a>
+          </div>
+          </div></li>
+          <li class="hide4"><div class="funding-companies">
+            <img src="images/solink.png" alt="">
+            <h3><b>Solink</b></h3>
+            <h4>$1.5M</h4>
+            <h5>VENTURE CAPITAL</h5>
+            <div class="icon-links">
+              <a href="#">
+                <span><i class="tag"></i>E-Commerce, +3</span><br />
+                <span><i class="bag"></i>ACT Venture Capital, +2</span>
+              </a>
+            <a href="#" class="funding-ad">Colvin Raises €14M in Series B Funding on FinSMEs</a>
+          </div>
+          </div></li>
         </ul>
         </div>
         <div class="topic-links">
           <section>
-            <p>Apps</p>
+            <p class="title">Apps</p>
             <h3 class="politicians">Facebook will label politicians' posts that violate its policies after all</h3>
             <div class="topic-link-header">
               <h4>Facebook will warn you about sharing articles older than 3 months</h4>
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Gear</p>
+            <p class="title">Gear</p>
             <img src="images/apple.png" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Tech</p>
+            <p class="title">Tech</p>
               <h3 class="poetry">Digital poetry — 5 ways to combine human and computer languages</h3>
             <div class="topic-link-header">
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Creative</p>
+            <p class="title">Creative</p>
             <img src="" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Podium</p>
+            <p class="title">Podium</p>
             <img src="" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Insights</p>
+            <p class="title">Insights</p>
             <img src="" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Launch</p>
+            <p class="title">Launch</p>
             <img src="" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
           <section>
-            <p>Distract</p>
+            <p class="title">Distract</p>
             <img src="" alt="">
             <div class="topic-link-header">
 
             </div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="topic-link-list">
+              <li>Wirecard ominously pumps 140% during an irrational month for bankruptcy stocks</li>
+              <li>Cash App eclipsed Venmo during the pandemic, according to this one metric</li>
+              <li>Satoshi Nakaboto: ‘Data shows 61% of Bitcoin hasn't moved in over a year’</li>
+              <li>No, THIS is how much $10K worth of dot-com bubble stock is worth today</li>
+              <li>Here's what $10K invested at the height of the dot com bubble would be worth today (Oops, not quite)</li>
             </ul>
           </section>
         </div>
         <div class="latest-deals">
-          <p>Latest Deals</p>
+          <p class="title">Latest Deals ></p>
+          <a href="#">See all deals</a>
         <ul>
           <li><img src="images/leadership.png" alt="">
           <h4>FREE: Leadership & Management Diploma 4-Week Course</h4></li>
