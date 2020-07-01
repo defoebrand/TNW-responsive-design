@@ -381,7 +381,7 @@ p {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4, 270px);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
   list-style: none;
   justify-content: center;
@@ -408,12 +408,11 @@ li h4 {
 }
 
 .funding-links {
-  padding-left: 300px;
+  width: max-content;
 }
 
 .funding-actions {
   max-width: 1158px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -713,6 +712,14 @@ section {
 }
 
 @media only screen and (max-width: 1023px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section {
+    width: 50%;
+  }
+
   .hover-image {
     display: block;
   }
@@ -743,24 +750,24 @@ section {
 }
 
 @media only screen and (max-width: 1000px) {
-  ul {
-    grid-template-columns: repeat(3, 300px);
-  }
-
   .topic-links {
     width: 900px;
   }
 
+  .funding-actions {
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
   .funding-links {
-    padding-left: 100px;
-  }
-
-  section {
-    width: 50%;
-  }
-
-  .hide4 {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    height: 100%;
+    padding-left: 0;
   }
 }
 
