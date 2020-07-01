@@ -78,6 +78,34 @@ p {
   margin-right: 10px;
 }
 
+.funding-links a {
+  color: #f42;
+  font-size: 18px;
+}
+
+.deals-list a {
+  text-decoration: line-through;
+  padding-right: 10px;
+}
+
+.social-logos a {
+  display: block;
+  height: 40px;
+  padding: 20px 20px 0 20px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.social-links a {
+  color: #aaa;
+}
+
+.copyright a {
+  display: flex;
+}
+
 .preheader a:hover,
 .hover-nav a:hover,
 .social-links a:hover {
@@ -307,8 +335,6 @@ p {
   align-items: center;
 }
 
-
-
 .content {
   margin: 25px auto;
   padding: 0 10px;
@@ -363,11 +389,6 @@ li h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.funding-links a {
-  color: #f42;
-  font-size: 18px;
 }
 
 .funding img {
@@ -460,11 +481,6 @@ li h4 {
   color: #f42;
 }
 
-.deals-list a {
-  text-decoration: line-through;
-  padding-right: 10px;
-}
-
 .deals-list li {
   height: 275px;
 }
@@ -526,7 +542,6 @@ section {
   width: 96px;
   height: 96px;
   float: right;
-
 }
 
 .topic-link-header h4,
@@ -548,16 +563,6 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
-}
-
-.social-logos a {
-  display: block;
-  height: 40px;
-  padding: 20px 20px 0 20px;
-  margin: 5px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .facebook {
@@ -624,20 +629,12 @@ section {
   align-items: center;
 }
 
-.social-links a {
-  color: #aaa;
-}
-
 .copyright {
   background: #000;
   height: 33%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.copyright a {
-  display: flex;
 }
 
 .footer-tnw,
@@ -729,7 +726,7 @@ section {
     display: none;
   }
 
- .border-left.display-small {
+  .border-left.display-small {
     display: flex;
   }
 
