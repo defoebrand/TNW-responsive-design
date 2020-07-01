@@ -2,11 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 body {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 nav {
@@ -37,10 +39,6 @@ img {
 p {
   color: #f42;
   font-size: 15px;
-}
-
-article div {
-  margin: 5px;
 }
 
 .latest-news img {
@@ -81,7 +79,8 @@ article div {
 }
 
 .preheader a:hover,
-.hover-nav a:hover {
+.hover-nav a:hover,
+.social-links a:hover {
   color: white;
 }
 
@@ -154,6 +153,18 @@ article div {
   min-width: 100px;
   min-height: 80px;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
+  position: relative;
+}
+
+.hover-image::after {
+  display: block;
+  width: 65%;
+  height: 30%;
+  margin: 35% auto;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 
 .hover-image:hover {
@@ -230,12 +241,12 @@ article div {
 
 .articles {
   display: flex;
-  height: 550px;
-  max-height: 550px;
+  width: 100%;
+  height: 500px;
 }
 
 .main-article-link {
-  flex-grow: 2;
+  min-width: 66%;
   background-image: url(images/astronaut.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,6 +255,7 @@ article div {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  margin: 5px;
 }
 
 .main-article-text {
@@ -252,18 +264,25 @@ article div {
   padding-bottom: 20px;
 }
 
+.right-article-links {
+  min-width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .right-article-text {
   color: white;
   font-size: 40px;
   padding-bottom: 20px;
 }
 
-.right-article-links {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.right-article-links div {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  margin: 5px;
 }
 
 .right-link-top {
@@ -288,10 +307,7 @@ article div {
   align-items: center;
 }
 
-.right-article-links div {
-  width: 100%;
-  flex: 1;
-}
+
 
 .content {
   margin: 25px auto;
@@ -299,7 +315,7 @@ article div {
 }
 
 .latest-news {
-  margin: 35px 0;
+  margin: 35px auto 75px;
 }
 
 .title {
@@ -307,7 +323,6 @@ article div {
   margin: 25px auto;
   font-size: 28px;
   font-weight: bold;
-  border: 1px solid purple;
 }
 
 ul {
@@ -338,8 +353,12 @@ li h4 {
   margin: 0;
 }
 
+.funding-links {
+  padding-left: 300px;
+}
+
 .funding-actions {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -425,10 +444,29 @@ li h4 {
   margin: 50px auto;
 }
 
-.latest-deals p {
-  max-width: 1200px;
-  margin: 5px auto;
-  padding: 0 5px;
+.deals-header {
+  max-width: 1158px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deals-title {
+  margin: 0;
+}
+
+.deals-link {
+  color: #f42;
+}
+
+.deals-list a {
+  text-decoration: line-through;
+  padding-right: 10px;
+}
+
+.deals-list li {
+  height: 275px;
 }
 
 .topic-links {
@@ -437,15 +475,7 @@ li h4 {
   justify-content: flex-start;
   width: 1200px;
   max-width: 100%;
-  margin: 10px auto;
-}
-
-.topic-links h3 {
-  width: 100%;
-  height: 275px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
+  margin: 10px auto 100px;
 }
 
 .topic-link-list {
@@ -462,32 +492,47 @@ li h4 {
   height: 40px;
   width: 100%;
   border-bottom: 1px solid lightgray;
+  font-size: 12px;
 }
 
-.politicians {
-  background-image: url(images/politicians.png);
-}
-
-.poetry {
+.section-image {
   background-image: url(images/poetry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 275px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
 }
 
 section {
   width: 33.334%;
   height: 700px;
   padding: 10px;
-  margin-top: 15px;
-}
-
-section img {
-  width: 100%;
-  height: 275px;
+  margin: 50px 0 75px;
 }
 
 .topic-link-header {
-  height: 40px;
+  height: 96px;
   width: 100%;
   background: beige;
+}
+
+.topic-link-header img {
+  width: 96px;
+  height: 96px;
+  float: right;
+
+}
+
+.topic-link-header h4,
+.topic-link-header h5 {
+  color: #f42;
+  padding: 10px 10px 0 10px;
 }
 
 .social {
@@ -499,6 +544,76 @@ section img {
 
 .social-logos {
   height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-logos a {
+  display: block;
+  height: 40px;
+  padding: 20px 20px 0 20px;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url(images/facebook.png);
+}
+
+.facebook:hover {
+  background-image: url(images/facebook-hover.png);
+}
+
+.twitter {
+  background-image: url(images/twitter.png);
+}
+
+.twitter:hover {
+  background-image: url(images/twitter-hover.png);
+}
+
+.youtube {
+  background-image: url(images/youtube.png);
+}
+
+.youtube:hover {
+  background-image: url(images/youtube-hover.png);
+}
+
+.icongram {
+  background-image: url(images/icongram.png);
+}
+
+.icongram:hover {
+  background-image: url(images/icongram-hover.png);
+}
+
+.pinterest {
+  background-image: url(images/pinterest.png);
+}
+
+.pinterest:hover {
+  background-image: url(images/pinterest-hover.png);
+}
+
+.wifi {
+  background-image: url(images/wifi.png);
+}
+
+.wifi:hover {
+  background-image: url(images/wifi-hover.png);
+}
+
+.email {
+  background-image: url(images/email.png);
+}
+
+.email:hover {
+  background-image: url(images/email-hover.png);
 }
 
 .social-links {
@@ -521,6 +636,10 @@ section img {
   align-items: center;
 }
 
+.copyright a {
+  display: flex;
+}
+
 .footer-tnw,
 .footer-stackpath {
   display: inline;
@@ -529,6 +648,22 @@ section img {
 .copyright p {
   color: #aaa;
   margin: 0 5px;
+}
+
+.copyright i {
+  color: red;
+}
+
+.handicap {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.handicap:hover {
+  transform: scale(1.25);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -570,6 +705,10 @@ section img {
     width: 900px;
   }
 
+  .funding-links {
+    padding-left: 100px;
+  }
+
   section {
     width: 50%;
   }
@@ -590,7 +729,7 @@ section img {
     display: none;
   }
 
-.border-left.display-small {
+ .border-left.display-small {
     display: flex;
   }
 
@@ -607,11 +746,11 @@ section img {
   }
 
   .main-article-link {
-    flex: 1;
+    height: 30%;
   }
 
   .right-article-links {
-    flex: 2;
+    height: 70%;
   }
 
   ul {
@@ -624,14 +763,27 @@ section img {
     height: 75px;
   }
 
+  .deals-list li {
+    height: 75px;
+  }
+
   .latest-news img,
   .latest-deals img {
     max-width: 75px;
-    max-height: 75px;
+    height: 100%;
+    clear: both;
+  }
+
+  .small-screen-text {
+    float: right;
+    width: calc(100% - 75px);
+    height: 50px;
+    padding: 5px;
+    font-size: 13px;
   }
 
   .funding {
-   grid-template-rows: 125px 225px;
+    grid-template-rows: 125px 225px;
   }
 
   .funding-actions {
@@ -647,6 +799,7 @@ section img {
     justify-content: space-between;
     margin: 5px 0;
     height: 100%;
+    padding-left: 0;
   }
 
   .border-right {
@@ -655,10 +808,12 @@ section img {
 
   .topic-links {
     width: 100%;
+    margin: 650px auto 100px;
   }
 
   section {
     width: 100%;
+    margin: 25px 0 25px;
   }
 
   .hide6 {
