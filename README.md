@@ -21,7 +21,7 @@ This project was compiled by Brandon in the Microverse HTML/CSS section of the c
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/defoebrand/TNW-responsive-design/e973ce89d3f927c3e83d72db3eaf6b1dda2d9fb1/index.html)
+[Live Demo Link](https://rawcdn.githack.com/defoebrand/TNW-responsive-design/555fdec2389862119c3986795123710267991e2c/index.html)
 
 
 ## Getting Started
