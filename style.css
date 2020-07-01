@@ -500,7 +500,7 @@ li h4 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  list-style: inside;
+  list-style: none;
 }
 
 .topic-link-list li {
@@ -509,6 +509,15 @@ li h4 {
   width: 100%;
   border-bottom: 1px solid lightgray;
   font-size: 12px;
+}
+
+.topic-link-list li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .section-image {
